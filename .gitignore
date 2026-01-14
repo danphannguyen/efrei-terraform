@@ -1,0 +1,74 @@
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+.terraform.lock.hcl
+variables.tf
+
+# AWS Credentials and Keys
+.aws/
+terraform-key.pem
+terraform-key
+*.pem
+*.key
+*.p12
+*.pfx
+
+# AWS CLI
+.aws/
+
+# SSH Keys
+ssh-keys/
+keys/
+*.pem
+*.pub
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+tmp/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# CSV files (credentials, etc.)
+terraform-*.csv
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
