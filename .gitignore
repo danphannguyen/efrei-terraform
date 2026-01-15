@@ -5,6 +5,8 @@ terraform.tfstate.backup
 *.tfvars
 .terraform.lock.hcl
 variables.tf
+.terraform.tfstate.lock.info
+*.tfstate.lock.info
 
 # AWS Credentials and Keys
 .aws/
