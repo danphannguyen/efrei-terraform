@@ -159,7 +159,7 @@ ssh -i ~/Documents/terraform-keys/terraform-key.pem ec2-user@54.123.45.67
 - **Sauvegardez** vos clés dans un endroit sûr (cloud sécurisé, disque externe)
 
 ## Vérifier la configuration complète
-Avant de vérifier la configuration complète, assurez vous d'avoir modifier le fichier "variables_template.tf" et de l'avoir renommer "variables.tf"
+Avant de vérifier la configuration complète, assurez vous d'avoir modifier le fichier "variables_template.md" et de l'avoir renommer "variables.tf"
 
 ### 1. Initialiser Terraform
 
@@ -182,7 +182,7 @@ terraform apply
 Tapez `yes` pour confirmer.
 
 ## Test du projet
-Si vous lancé le projet pour la première fois, un mail de confirmation de souscription devrait arrivé dans votre boite mail (il peut se trouver dans les spams)
+Lors du lancement du projet, un mail de confirmation de souscription devrait arrivé dans votre boite mail (il peut se trouver dans les spams). Il faudra impérativement l'accepter pour recevoir les mails de notifications
 
 ### 1. Upload d'un fichier
 Vous pouvez upload un fichier via le GUI (S3 > Votre bucket > Section "Chiffrement") ou en ligne de commande : 

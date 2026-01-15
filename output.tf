@@ -37,13 +37,18 @@ output "id_de_la_cle_kms" {
 # ===== SNS =====
 
 output "sns_topic_arn" {
-  description = "ARN du topic SNS pour les alertes"
+  description = "ARN du topic SNS pour les alertes brutes (S3 → Lambda)"
   value       = aws_sns_topic.alerte_securite.arn
+}
+
+output "sns_topic_formatted_arn" {
+  description = "ARN du topic SNS pour les emails formatés (Lambda → Email)"
+  value       = aws_sns_topic.alerte_securite_formatted.arn
 }
 
 output "sns_subscription_id" {
   description = "ID de l'abonnement email SNS"
-  value       = aws_sns_topic_subscription.email_admin.id
+  value       = aws_sns_topic_subscription.email_admin_formatted.id
 }
 
 output "confirmation_instructions" {
